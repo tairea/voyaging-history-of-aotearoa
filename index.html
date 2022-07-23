@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Voyaging History of Aotearoa</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <video autoplay muted loop playsinline id="myVideo">
+      <source src="assets/ocean2MB.mp4" type="video/mp4" />
+    </video>
+
+    <section class="purple-overlay"></section>
+
+    <div class="content">
+      <section class="title">
+        <p class="sub-title">The Voyaging History of</p>
+        <p class="main-title">Aotearoa</p>
+      </section>
+
+      <svg
+        id="svg"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 600 5000"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <!-- Timeline 100 year markers -->
+        <!-- Lines -->
+        <path class="line" d="M 10 400  590 400"></path> <!--500 BC-->
+        <path class="line" d="M 10 500  590 500"></path> <!--450 BC Te Nga-taito-ariki and Tu-te-rangi-marama rule over Atia-te-varinga-nui (India) -->
+        <path class="line" d="M 10 600  590 600"></path> <!--400 BC-->
+        <path class="line" d="M 10 800  590 800"></path> <!--300 BC-->
+        <path class="line" d="M 10 1000  590 1000"></path> <!--200 BC-->
+        <path class="line" d="M 10 1200  590 1200"></path> <!--100 BC-->
+        <path class="line" d="M 10 1250  590 1250"></path> <!--65 BC Te Kura-a-moo migrates to Avaiki-te-varinga (Java)-->
+        <path class="line" d="M 10 1400  590 1400"></path> <!--0-->
+       
+        <path class="line" d="M 10 1500  590 1500"></path>  <!--50 AD Vai-takere lives in Avaiki-te-varinga; discovery of breadfruit-->
+        <path class="line" d="M 10 1600  590 1600"></path> <!--100 AD-->
+        <path class="line" d="M 10 1800  590 1800"></path> 
+        <path class="line" d="M 10 2000  590 2000"></path>
+        <path class="line" d="M 10 2150  590 2150"></path> <!--390 AD-->
+        <path class="line" d="M 10 2200  590 2200"></path> <!--400 AD-->
+        <path class="line" d="M 10 2300  590 2300"></path> <!--450 AD-->
+        <path class="line" d="M 10 2400  590 2400"></path> <!--500 AD-->
+        <path class="line" d="M 10 2530  590 2530"></path> <!--575 AD-->
+        <path class="line" d="M 10 2600  590 2600"></path> <!--600 AD-->
+        <path class="line" d="M 10 2700  590 2700"></path> <!--650AD -->
+        <path class="line" d="M 10 2800  590 2800"></path>
+        <path class="line storyLine02" d="M 10 3000  590 3000"></path> <!--800AD -->
+        <path class="line" d="M 10 3100  590 3100"></path> <!--850AD -->
+        <path class="line" d="M 10 3150  590 3150"></path> <!--875AD -->
+        <path class="line" d="M 10 3200  590 3200"></path> <!--900AD -->
+        <path class="line" d="M 10 3250  590 3250"></path> <!--925AD -->
+        <path class="line" d="M 10 3400  590 3400"></path> <!-- 1000 AD-->
+        <path class="line" d="M 10 3600  590 3600"></path>
+        <path class="line" d="M 10 3800  590 3800"></path>
+        <path class="line" d="M 10 4000  590 4000"></path>
+        <path class="line" d="M 10 4200  590 4200"></path>
+        <path class="line" d="M 10 4400  590 4400"></path> <!--1500 AD-->
+
+
+
+        <!-- Text -->
+        <text class="yearLabel" x="30" y="390">500 BC</text>
+        <text class="yearLabel" x="30" y="490">450 BC</text>
+        <text class="yearLabel yearTitle" x="30" y="515">Te Nga-taito-ariki and Tu-te-rangi-marama</text>
+        <text class="yearLabel yearTitle" x="30" y="545">rule over Atia-te-varinga-nui (India)</text>
+        <text class="yearLabel" x="30" y="590">400 BC</text>
+        <text class="yearLabel" x="30" y="790">300 BC</text>
+        <text class="yearLabel" x="30" y="990">200 BC</text>
+        <text class="yearLabel" x="30" y="1190">100 BC</text>
+        <text class="yearLabel" x="30" y="1240">65 BC</text>
+        <text class="yearLabel yearTitle" x="30" y="1265">Te Kura-a-moo migrates to Avaiki-te-varinga (Java)</text>
+        
+        <text class="yearLabel" x="30" y="1390">0 BC</text>
+
+        <text class="yearLabel" x="30" y="1490">50 AD</text>
+        <text class="yearLabel yearTitle" x="30" y="1515">Vai-takere lives in Avaiki-te-varinga;</text>
+        <text class="yearLabel yearTitle" x="30" y="1545">discovery of breadfruit</text>
+        <text class="yearLabel" x="30" y="1590">100 AD</text>
+        <text class="yearLabel" x="30" y="1790">200 AD</text>
+        <text class="yearLabel" x="30" y="1990">300 AD</text>
+        <text class="yearLabel" x="30" y="2140">390 AD</text>
+        <text class="yearLabel yearTitle" x="30" y="2165">Period of Wakea (Fornander)</text>
+        <text class="yearLabel" x="30" y="2190">400 AD</text>
+        <text class="yearLabel" x="30" y="2290">450 AD</text>
+        <text class="yearLabel yearTitle" x="30" y="2315">Tu-tarangi is living in Fiji;</text>
+        <text class="yearLabel yearTitle" x="30" y="2345">first mention of Samoa</text>
+        <text class="yearLabel" x="30" y="2390">500 AD</text>
+        <text class="yearLabel yearTitle" x="30" y="2415">Period of Tinirau</text>
+        <text class="yearLabel" x="30" y="2520">575 AD</text>
+        <text class="yearLabel yearTitle" x="30" y="2545">Period of Renga-ariki</text>
+        <text class="yearLabel" x="30" y="2590">600 AD</text>
+        <text class="yearLabel yearTitle" x="30" y="2615">Tu-tonga-kai-a-Iti lives in Tonga-nui;</text>
+        <text class="yearLabel yearTitle" x="30" y="2645">others in Samoa</text>
+        <text class="yearLabel" x="30" y="2690">650 AD</text>
+        <text class="yearLabel yearTitle" x="30" y="2715">Period of Ui-te-rangiora, the navigator;</text>
+        <text class="yearLabel yearTitle" x="30" y="2745">Antarctic voyages</text>
+        <text class="yearLabel yearTitle" x="400" y="2665">Hawaii first settled</text>
+        <text class="yearLabel yearTitle" x="350" y="2765">Marquesas probably settled</text>
+        <text class="yearLabel" x="30" y="2790">700 AD</text>
+        <text class="yearLabel yearTitle" x="30" y="2815">Period of Tawhaki</text>
+        <text class="yearLabel" x="30" y="2990">800 AD</text>
+        <text class="yearLabel" x="30" y="3090">850 AD</text>
+        <text class="yearLabel yearTitle" x="30" y="3115">Maku visits New Zealand</text>
+        <text class="yearLabel yearTitle" x="300" y="3065">Tahiti was inhabited at this time</text>
+        <text class="yearLabel yearTitle" x="280" y="3095">but not then settled for the first time</text>
+        <text class="yearLabel" x="30" y="3140">875 AD</text>
+        <text class="yearLabel yearTitle" x="30" y="3165">Period of Apakura</text>
+        <text class="yearLabel yearTitle" x="130" y="3140">Rarotonga first colonised by Apopo and Ata-i-te-kura</text>
+        <text class="yearLabel yearTitle" x="130" y="3200">Period of Tuna-ariki and Tu-ei-puku in Fiji</text>
+        
+        <text class="yearLabel" x="30" y="3190">900 AD</text>
+        <text class="yearLabel" x="30" y="3390">1000 AD</text>
+        <text class="yearLabel" x="30" y="3590">1100 AD</text>
+        <text class="yearLabel" x="30" y="3790">1200 AD</text>
+        <text class="yearLabel" x="30" y="3990">1300 AD</text>
+        <text class="yearLabel" x="30" y="4190">1400 AD</text>
+        <text class="yearLabel" x="30" y="4290">1500 AD</text>
+
+        <!-- Timeline stories -->
+        <!-- Lines -->
+        <path class="storyLine01 storyLine" d="M 10 2700  590 2700"></path>
+        <path class=" storyLine" d="M 10 3000  590 3000"></path> <!--MAUI 800AD-->
+        <!-- <path class="storyLine03 storyLine" d="M 10 2050  590 2050"></path> -->
+        <!-- <path class="storyLine04 storyLine" d="M 10 2450  590 2450"></path> -->
+        <!-- <path class="storyLine05 storyLine" d="M 10 2500  590 2500"></path> -->
+
+ <!-- html title & video -->
+ <foreignObject id="story800AD" x="50" y="2990" width="500" height="500">
+    <div class="story800ADHidden">
+      <img src="./assets/maui-cover.png" width="500" style="margin-top: 50px;">
+      <p class="story-title" style="margin-top:-200px;margin-left:200px">Maui</p>
+    </div>
+  </foreignObject>
+
+
+        <!-- Waka path  -->
+        <path
+          class="theLine"
+          id="linePath"
+          d="M300.359 0V245.845C298.686 282.372 303.704 333.748 416.125 401.403C467.316 432.211 468.655 554.45 416.125 604C331.704 683.632 -71.0308 601.51 10.9426 781.843C68.3348 908.101 291.049 834.896 278 1030C264.951 1225.1 122.694 1188.73 166.859 1355.72C211.024 1522.71 634.504 1489.15 589 1618.5C543.496 1747.85 233.917 1720.93 256 1906.5C278.083 2092.07 692.583 2145.52 435.5 2242C217 2324 41 2406.35 41 2504.5C41 2602.65 336.5 2560.5 419.5 2765.5C508.065 2984.24 87.4962 2976.83 88.5 3064.5C89.8282 3180.5 439.5 3143.7 447.5 3274.5C457.5 3438 29 3513.5 236.5 3721C352.113 3836.61 540.5 3963 374.5 4042C240.076 4105.97 78 4065.5 81.5 4179C85 4292.5 374.5 4305.21 374.5 4458.5C374.5 4593.5 46 4612 202 4695C294 4743.95 441.338 4758.08 374.5 4791.5C320.5 4818.5 308.5 4873.76 308.5 4923C308.5 4967 308.5 4967 308.5 4996.5" 
+          stroke="#646FD4"
+          stroke-width="1"
+          fill="none"
+        />
+        
+          
+        
+          
+
+        <!-- Waka -->
+        <!-- <path
+          class="waka"
+          d="M13.9998 0.5C3.99993 27.5 -11.6002 74.8 13.9998 132C39.4999 75.5 23.5 26 13.9998 0.5Z"
+          fill="#0AA1DD"
+        /> -->
+
+        <!-- testing new waka svg -->
+        <g class="waka">
+
+            
+              <path d="M1 108C39 58.4 61.1667 16.3333 67.5 1.5C73.9283 18.6833 78.6755 34.2467 81.8098 48.5C82.8679 53.312 83.7422 57.9747 84.4352 62.5C89.9923 98.785 83.8976 126.236 67.5 151C42 113.5 49.5 75 49.5 64C35.5 80.5 11.5 101 1 108Z" fill="#646FD4"/>
+              <path d="M123 36C126 45.5 130 73.5 123 118C120.04 95.896 119.392 77.7518 119.796 64C120.21 49.8799 121.733 40.3906 123 36Z" fill="#646FD4"/>
+              <path d="M1 108C39 58.4 61.1667 16.3333 67.5 1.5C73.9283 18.6833 78.6755 34.2467 81.8098 48.5C82.8679 53.312 83.7422 57.9747 84.4352 62.5C89.9923 98.785 83.8976 126.236 67.5 151C42 113.5 49.5 75 49.5 64C35.5 80.5 11.5 101 1 108Z" stroke="#646FD4"/>
+              <path d="M123 36C126 45.5 130 73.5 123 118C120.04 95.896 119.392 77.7518 119.796 64C120.21 49.8799 121.733 40.3906 123 36Z" stroke="#646FD4"/>
+              <path d="M88 48.5H91H96V62V77.5V90.46V101.96L91 101.76L88 101.64V90.14V77.5V62V48.5Z" fill="#646FD4"/>
+              <path d="M81 48.5H122M83 62H122M84.5 77.5H122M84.5 90L122 91.5M84.5 101.5L122 103M88 45.5V108.5M91 45.5V105M96 45.5V108.5" stroke="#646FD4" stroke-width="2"/>
+              <path d="M100.5 46.5V105.5M105.5 46.5L106.5 107M112.5 45L114 107M117 46.5L118.5 105.5M49.5 72.5L42 72M42 68.5V93M42 100.5V93M49.5 93H42" stroke="#646FD4" stroke-width="2"/>
+              <path d="M18.5 93.5L57 128.5" stroke="#646FD4"/>
+              <path d="M73.5 23L125 85.5" stroke="#646FD4"/>
+              
+    
+        </g>
+
+        <!-- STORY 1 -->
+        <!-- circle -->
+        <circle
+          class="ball ball02"
+          r="10"
+          cx="405"
+          cy="2700"
+          fill="#646FD4"
+        ></circle>
+        <!-- text -->
+        <text class="storyText storyText01" x="350" y="2690">650 AD</text>
+        <!-- html title & video -->
+        <!-- <foreignObject id="story650AD" x="50" y="1490" width="500" height="500">
+          <div class="story650ADHidden">
+            <p class="story-title">Ui Te Rangiora</p>
+            <iframe
+              src="https://www.youtube.com/embed/bOQPwB0HiBo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </foreignObject> -->
+
+        <!-- STORY 2 -->
+        <circle
+          class="ball ball03"
+          r="10"
+          cx="147"
+          cy="3000"
+          fill="#646FD4"
+        ></circle>
+        <text class="storyText02 storyText" x="170" y="2990">800 AD</text>
+       
+
+        <!-- STORY 3 -->
+        <!-- circle -->
+        <circle
+          class="ball ball04"
+          r="10"
+          cx="190"
+          cy="3250"
+          fill="#646FD4"
+        ></circle>
+        <!-- 925 AD -->
+        <text class="storyText03 storyText" x="150" y="3240">925 AD</text>
+
+        <!-- STORY 4 -->
+        <!-- circle -->
+        <!-- <circle
+          class="ball ball05"
+          r="10"
+          cx="360"
+          cy="2450"
+          fill="#646FD4"
+        ></circle> -->
+        <!-- 1125 AD -->
+        <!-- <text class="storyText04 storyText" x="350" y="2440">1125 AD</text> -->
+
+        <!-- STORY 5 -->
+        <!-- circle -->
+        <!-- <circle
+          class="ball ball06"
+          r="10"
+          cx="395"
+          cy="2500"
+          fill="#646FD4"
+        ></circle> -->
+        <!-- 1150 AD -->
+        <!-- <text class="storyText05 storyText" x="380" y="2490">1150 AD</text> -->
+
+        <!-- <path class="theLine" d="M -5,0
+                 Q 450 230 300 450 
+                 T 130 750
+                 Q 100 850 300 1000
+                 T 150 1200" fill="none" stroke="white" stroke-width="2px" /> -->
+
+        <!-- <path class="theLine" d="M -5 0 Q 450 230 300 450 T 130 750 Q 100 850 306 1326 T 158 2072" fill="none" stroke="white" stroke-width="2px" /> -->
+
+        <!-- </svg> -->
+
+        <!-- path follower -->
+        <!-- <circle class="ball ball01" r="20" cx="50" cy="100"></circle> -->
+
+        <!-- Timeline points -->
+      </svg>
+    </div>
+    <!-- End of content -->
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
+<!-- Inspiration: https://www.youtube.com/watch?v=ersN5fk8py0&ab_channel=snorklTV -->
