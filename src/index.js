@@ -106,7 +106,7 @@ const main = gsap
         start: "center 20%",
         end: "+=350",
         pin: "#svg",
-        markers: true,
+        // markers: true,
         toggleClass: {
           targets: ".story800ADHidden",
           className: "story800ADShow"
@@ -119,3 +119,24 @@ const main = gsap
   .add(pulses, 0);
 
 GSDevTools.create({ animation: main });
+
+document.getElementById("maui-playbutton").addEventListener("click", triggerMauiLightbox, false)
+document.getElementById("lightbox-closebutton").addEventListener("click", triggerMauiLightbox, false)
+
+var activeFlag = false
+
+function triggerMauiLightbox() {
+  activeFlag = !activeFlag
+  if (activeFlag) {
+
+    // add noscroll class to body
+    document.getElementsByTagName("body")[0].classList.add("noscroll");
+    // display: flex to lightbox maui
+    document.getElementById("maui-lightbox").classList.add("active");
+  } else {
+    // add noscroll class to body
+    document.getElementsByTagName("body")[0].classList.remove("noscroll");
+    // display: flex to lightbox maui
+    document.getElementById("maui-lightbox").classList.remove("active");
+  }
+}
