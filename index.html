@@ -21,137 +21,233 @@
       <p class="main-title">Aotearoa</p>
     </section>
 
-    <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 5000" preserveAspectRatio="xMidYMid meet">
-      <!-- Timeline 100 year markers -->
-      <!-- Lines -->
-      <path class="line" d="M 10 400  590 400"></path>
-      <!--500 BC-->
-      <path class="line" d="M 10 500  590 500"></path>
-      <!--450 BC Te Nga-taito-ariki and Tu-te-rangi-marama rule over Atia-te-varinga-nui (India) -->
-      <path class="line" d="M 10 600  590 600"></path>
-      <!--400 BC-->
-      <path class="line" d="M 10 800  590 800"></path>
-      <!--300 BC-->
-      <path class="line" d="M 10 1000  590 1000"></path>
-      <!--200 BC-->
-      <path class="line" d="M 10 1200  590 1200"></path>
-      <!--100 BC-->
-      <path class="line" d="M 10 1250  590 1250"></path>
-      <!--65 BC Te Kura-a-moo migrates to Avaiki-te-varinga (Java)-->
-      <path class="line" d="M 10 1400  590 1400"></path>
-      <!--0-->
+    <div><img id="disclaimer-infobutton" class="info-button circle pulse" src="./assets/info.png" width="50" /></div>
 
-      <path class="line" d="M 10 1500  590 1500"></path>
-      <!--50 AD Vai-takere lives in Avaiki-te-varinga; discovery of breadfruit-->
-      <path class="line" d="M 10 1600  590 1600"></path>
-      <!--100 AD-->
-      <path class="line" d="M 10 1800  590 1800"></path>
-      <path class="line" d="M 10 2000  590 2000"></path>
-      <path class="line" d="M 10 2150  590 2150"></path>
-      <!--390 AD-->
-      <path class="line" d="M 10 2200  590 2200"></path>
-      <!--400 AD-->
-      <path class="line" d="M 10 2300  590 2300"></path>
-      <!--450 AD-->
-      <path class="line" d="M 10 2400  590 2400"></path>
-      <!--500 AD-->
-      <path class="line" d="M 10 2530  590 2530"></path>
-      <!--575 AD-->
-      <path class="line" d="M 10 2600  590 2600"></path>
-      <!--600 AD-->
-      <path class="line" d="M 10 2700  590 2700"></path>
-      <!--650AD -->
-      <path class="line" d="M 10 2800  590 2800"></path>
-      <path class="line storyLine02" d="M 10 3000  590 3000"></path>
-      <!--800AD -->
-      <path class="line" d="M 10 3100  590 3100"></path>
-      <!--850AD -->
-      <path class="line" d="M 10 3150  590 3150"></path>
-      <!--875AD -->
-      <path class="line" d="M 10 3200  590 3200"></path>
-      <!--900AD -->
-      <path class="line" d="M 10 3250  590 3250"></path>
-      <!--925AD -->
-      <path class="line" d="M 10 3400  590 3400"></path> <!-- 1000 AD-->
-      <path class="line" d="M 10 3600  590 3600"></path>
-      <path class="line" d="M 10 3800  590 3800"></path>
-      <path class="line" d="M 10 4000  590 4000"></path>
-      <path class="line" d="M 10 4200  590 4200"></path>
-      <path class="line" d="M 10 4400  590 4400"></path>
+    <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 4400" preserveAspectRatio="xMidYMid meet">
+
+      <!-- ==============
+         Year Markers every 100 year
+         ================= -->
+      <!-- Lines -->
+      <!--500 BC-->
+      <path class="line" d="M 100 400  590 400"></path>
+      <path class="line" d="M 100 600  590 600"></path>
+      <path class="line" d="M 100 800  590 800"></path>
+      <path class="line" d="M 100 1000  590 1000"></path>
+      <path class="line" d="M 100 1200  590 1200"></path>
+      <path class="line" d="M 100 1400  590 1400"></path>
+      <path class="line" d="M 100 1600  590 1600"></path>
+      <path class="line" d="M 100 1800  590 1800"></path>
+      <path class="line" d="M 100 2000  590 2000"></path>
+      <path class="line" d="M 100 2150  590 2150"></path>
+      <path class="line" d="M 100 2200  590 2200"></path>
+      <path class="line" d="M 100 2300  590 2300"></path>
+      <path class="line" d="M 100 2400  590 2400"></path>
+      <path class="line" d="M 100 2600  590 2600"></path>
+      <path class="line" d="M 100 2800  590 2800"></path>
+      <path class="line storyLine02" d="M 100 3000  590 3000"></path>
+      <path class="line" d="M 100 3200  590 3200"></path>
+      <!-- 1000 AD-->
+      <path class="line" d="M 100 3400  590 3400"></path>
+      <path class="line" d="M 100 3600  590 3600"></path>
+      <path class="line" d="M 100 3800  590 3800"></path>
+      <path class="line" d="M 100 4000  590 4000"></path>
+      <path class="line" d="M 100 4200  590 4200"></path>
       <!--1500 AD-->
 
-
-
       <!-- Text -->
-      <text class="yearLabel" x="30" y="390">500 BC</text>
-      <text class="yearLabel" x="30" y="490">450 BC</text>
-      <text class="yearLabel yearTitle" x="30" y="515">Te Nga-taito-ariki and Tu-te-rangi-marama</text>
-      <text class="yearLabel yearTitle" x="30" y="545">rule over Atia-te-varinga-nui (India)</text>
-      <text class="yearLabel" x="30" y="590">400 BC</text>
-      <text class="yearLabel" x="30" y="790">300 BC</text>
-      <text class="yearLabel" x="30" y="990">200 BC</text>
-      <text class="yearLabel" x="30" y="1190">100 BC</text>
-      <text class="yearLabel" x="30" y="1240">65 BC</text>
-      <text class="yearLabel yearTitle" x="30" y="1265">Te Kura-a-moo migrates to Avaiki-te-varinga (Java)</text>
+      <!--500 BC-->
+      <text class="yearLabel" x="30" y="400">500 BC</text>
+      <text class="yearLabel" x="30" y="600">400 BC</text>
+      <text class="yearLabel" x="30" y="800">300 BC</text>
+      <text class="yearLabel" x="30" y="1000">200 BC</text>
+      <text class="yearLabel" x="30" y="1200">100 BC</text>
+      <text class="yearLabel" x="30" y="1400">1 BC</text>
+      <text class="yearLabel" x="30" y="1600">100 CE</text>
+      <text class="yearLabel" x="30" y="1800">200 CE</text>
+      <text class="yearLabel" x="30" y="2000">300 CE</text>
+      <text class="yearLabel" x="30" y="2200">400 CE</text>
+      <text class="yearLabel" x="30" y="2400">500 CE</text>
+      <text class="yearLabel" x="30" y="2600">600 CE</text>
+      <text class="yearLabel" x="30" y="2800">700 CE</text>
+      <text class="yearLabel" x="30" y="3000">800 CE</text>
+      <text class="yearLabel" x="30" y="3200">900 CE</text>
+      <text class="yearLabel" x="30" y="3400">1000 CE</text>
+      <text class="yearLabel" x="30" y="3600">1100 CE</text>
+      <text class="yearLabel" x="30" y="3800">1200 CE</text>
+      <text class="yearLabel" x="30" y="4000">1300 CE</text>
+      <text class="yearLabel" x="30" y="4200">1400 CE</text>
 
-      <text class="yearLabel" x="30" y="1390">0 BC</text>
+      <!-- ==============
+         Year Names every 25 years
+         ================= -->
+      <!-- 500BC starts at y400 -->
+      <text class="yearLabel yearTitle" x="30" y="375">505 BC - Tupua and Tonga-iti y:375</text>
+      <text class="yearLabel yearTitle" x="30" y="425">480 BC - O le Nga-taito-alii y:425</text>
+      <text class="yearLabel yearTitle" x="30" y="475">455 BC - O le Nga-tupua y:475</text>
+      <text class="yearLabel yearTitle" x="30" y="525">430 BC - O le Te-ate-a-nuku y:525</text>
+      <text class="yearLabel yearTitle" x="30" y="575">405 BC - O le Te-ate-a-langi y:575</text>
+      <text class="yearLabel yearTitle" x="30" y="625">380 BC - O le Te-uila-o-le-langi y:625</text>
+      <text class="yearLabel yearTitle" x="30" y="675">355 BC - O le Te-āā-o-le-langi y:675</text>
+      <text class="yearLabel yearTitle" x="30" y="725">330 BC - O le Te-magugu-a-le-langi y:725</text>
+      <text class="yearLabel yearTitle" x="30" y="775">305 BC - O le Te-gatata-o-le-langi y:775</text>
 
-      <text class="yearLabel" x="30" y="1490">50 AD</text>
+      <text class="yearLabel yearTitle" x="30" y="825">280 BC - O le Ati-tulia-o-le-langi y:825</text>
+      <text class="yearLabel yearTitle" x="30" y="875">255 BC - O le Tuta-langi-o-longo y:875</text>
+      <text class="yearLabel yearTitle" x="30" y="925">230 BC - O le Tuta-langi y:925</text>
+      <text class="yearLabel yearTitle" x="30" y="975">205 BC - O le Tu-maunga-o-atu y:975</text>
+
+      <text class="yearLabel yearTitle" x="30" y="1025">180 BC - O le Tu-ala-pakoia y:1025</text>
+      <text class="yearLabel yearTitle" x="30" y="1075">155 BC - O le Te-pupū y:1075</text>
+      <text class="yearLabel yearTitle" x="30" y="1125">130 BC - O le Te-o-ata y:1125</text>
+      <text class="yearLabel yearTitle" x="30" y="1175">105 BC - O le Tane-au-aka y:1175</text>
+
+      <text class="yearLabel yearTitle" x="30" y="1225">80 BC - O le Tane-tutaki-fanua y:1225</text>
+      <text class="yearLabel yearTitle" x="30" y="1275">55 BC - O le Tane-a-lulu y:1275</text>
+      <text class="yearLabel yearTitle" x="30" y="1325">30 BC - O le Tane-iti-pepele y:1325</text>
+      <text class="yearLabel yearTitle" x="30" y="1375">5 CE - O le Tane-makolo-i-le-tua-o-le-langi y:1375</text>
+
+      <!--  -->
+      <text class="yearLabel yearTitle" x="30" y="1425">20 CE - O le Koia-ulu-ta'a y:1425</text>
+      <text class="yearLabel yearTitle" x="30" y="1475">45 CE - O le Tei-vao y:1475</text>
+      <text class="yearLabel yearTitle" x="30" y="1525">95 CE - O le Tane y:1525</text>
+      <text class="yearLabel yearTitle" x="30" y="1575">70 CE - O le Te-tupu-i-Avaiki y:1575</text>
+
+      <text class="yearLabel yearTitle" x="30" y="1625">120 CE - O le Te-Avaiki-atea y:1625</text>
+      <text class="yearLabel yearTitle" x="30" y="1675">145 CE - O le Te-aolia-nuku y:1675</text>
+      <text class="yearLabel yearTitle" x="30" y="1725">170 CE - O le Te-poti-o-le-langi y:1725</text>
+      <text class="yearLabel yearTitle" x="30" y="1775">195 CE - O le Mata-nuku y:1775</text>
+
+      <text class="yearLabel yearTitle" x="30" y="1825">220 CE - O le Tuia y:1825</text>
+      <text class="yearLabel yearTitle" x="30" y="1875">245 CE - O le Mata-langi-tuia y:1875</text>
+      <text class="yearLabel yearTitle" x="30" y="1925">270 CE - O le Koeia y:1925</text>
+      <text class="yearLabel yearTitle" x="30" y="1975">295 CE - O le Nooia y:1975</text>
+
+      <text class="yearLabel yearTitle" x="30" y="2025">320 CE - O le Manava y:2025</text>
+      <text class="yearLabel yearTitle" x="30" y="2075">345 CE - O le Enua y:2075</text>
+      <text class="yearLabel yearTitle" x="30" y="2125">370 CE - O le Tapu y:2125</text>
+      <text class="yearLabel yearTitle" x="30" y="2175">395 CE - O le Te-kapua-nui y:2175</text>
+
+      <text class="yearLabel yearTitle" x="30" y="2225">420 CE - O le Te-kapua-ai y:2225</text>
+      <text class="yearLabel yearTitle" x="30" y="2275">445 CE - O le Te-kapua-ai y:2275</text>
+      <text class="yearLabel yearTitle" x="30" y="2325">470 CE - O le Te-ala-kapua y:2325</text>
+      <text class="yearLabel yearTitle" x="30" y="2375">495 CE - O le Manu y:2375</text>
+
+      <text class="yearLabel yearTitle" x="30" y="2425">520 CE - O le Manu-te-iilii y:2425</text>
+      <text class="yearLabel yearTitle" x="30" y="2475">545 CE - O le Manu-te-lalama y:2475</text>
+      <text class="yearLabel yearTitle" x="30" y="2525">570 CE - O le Manu-kai-ai y:2525</text>
+      <text class="yearLabel yearTitle" x="30" y="2575">595 CE - O le Manu-kaka-kinaloa y:2575</text>
+
+      <text class="yearLabel yearTitle" x="30" y="2625">620 CE - O le Uu y:2625</text>
+      <text class="yearLabel yearTitle" x="30" y="2675">645 CE - O le Ane y:2675</text>
+      <text class="yearLabel yearTitle" x="30" y="2725">670 CE - O le Ti-tape-uta y:2725</text>
+      <text class="yearLabel yearTitle" x="30" y="2775">695 CE - O le Ti-tape-tai y:2775</text>
+
+      <text class="yearLabel yearTitle" x="30" y="2825">720 CE - O le Tangaloa-i-i'u-gata y:2825</text>
+      <text class="yearLabel yearTitle" x="30" y="2875">745 CE - O le Tukituki y:2875</text>
+      <text class="yearLabel yearTitle" x="30" y="2925">770 CE - O le Aka-vaa y:2925</text>
+      <text class="yearLabel yearTitle" x="30" y="2975">795 CE - O le Te-la-ili y:2975</text>
+
+      <text class="yearLabel yearTitle" x="30" y="3025">820 CE - O le Te-aleale-matangi y:3025</text>
+      <text class="yearLabel yearTitle" x="30" y="3075">845 CE - O le Tu-agai-mai y:3075</text>
+      <text class="yearLabel yearTitle" x="30" y="3125">870 CE - O le Te-langi-taili y:3125</text>
+      <text class="yearLabel yearTitle" x="30" y="3175">895 CE - O le Taili-i-le-langi y:3175</text>
+
+      <text class="yearLabel yearTitle" x="30" y="3225">920 CE - O le Te-langi-taili y:3225</text>
+      <text class="yearLabel yearTitle" x="30" y="3275">945 CE - O le Ta-pili-to'elau y:3275</text>
+      <text class="yearLabel yearTitle" x="30" y="3325">970 CE - O le Rata y:3325</text>
+      <text class="yearLabel yearTitle" x="30" y="3375">995 CE - O le Rata-tia y:3375</text>
+
+      <text class="yearLabel yearTitle" x="30" y="3425">1020 CE - O le Rata-vale y:3425</text>
+      <text class="yearLabel yearTitle" x="30" y="3475">1045 CE - O le Alii y:3475</text>
+      <text class="yearLabel yearTitle" x="30" y="3525">1070 CE - O le Ta y:3525</text>
+      <text class="yearLabel yearTitle" x="30" y="3575">1095 CE - O le Tai (Toi Te Huatahi y:3575)</text>
+
+      <text class="yearLabel yearTitle" x="30" y="3625">1120 CE - O le Rika-langi y:3625</text>
+      <text class="yearLabel yearTitle" x="30" y="3675">1145 CE - O le Ra-ulu (Rauru y:3675)</text>
+      <text class="yearLabel yearTitle" x="30" y="3725">1170 CE - O le Atonga (Whatonga y:3725)</text>
+      <text class="yearLabel yearTitle" x="30" y="3775">1195 CE - O le Te-alutanga-nuku (Tui A'ana y:3775)</text>
+
+      <text class="yearLabel yearTitle" x="30" y="3825">1220 CE - O le Te-alutanga-langi y:3825</text>
+      <text class="yearLabel yearTitle" x="30" y="3875">1245 CE - O le Kaukula y:3875</text>
+      <text class="yearLabel yearTitle" x="30" y="3925">1270 CE - O le Malu y:3925</text>
+      <text class="yearLabel yearTitle" x="30" y="3975">1295 CE - O le Te-uenga, o lea fo'i Tangiia y:3975</text>
+
+      <text class="yearLabel yearTitle" x="30" y="4025">1320 CE - O le Apa / Motoro y:4025</text>
+      <text class="yearLabel yearTitle" x="30" y="4075">1345 CE - Uenuku-rakei-ora y:4075</text>
+      <text class="yearLabel yearTitle" x="30" y="4125">1370 CE - Uenuku-te-aitu y:4125</text>
+      <text class="yearLabel yearTitle" x="30" y="4175">1395 CE - Ruatapu y:4175</text>
+
+      <text class="yearLabel yearTitle" x="30" y="4225">1420 CE - Rakeiora y:4225</text>
+      <text class="yearLabel yearTitle" x="30" y="4275">1445 CE - Tama ki te Hau y:4275</text>
+
+      <!-- <text class="yearLabel yearTitle" x="30" y="1265">Te Kura-a-moo migrates to Avaiki-te-varinga (Java)</text>
       <text class="yearLabel yearTitle" x="30" y="1515">Vai-takere lives in Avaiki-te-varinga;</text>
       <text class="yearLabel yearTitle" x="30" y="1545">discovery of breadfruit</text>
-      <text class="yearLabel" x="30" y="1590">100 AD</text>
-      <text class="yearLabel" x="30" y="1790">200 AD</text>
-      <text class="yearLabel" x="30" y="1990">300 AD</text>
-      <text class="yearLabel" x="30" y="2140">390 AD</text>
       <text class="yearLabel yearTitle" x="30" y="2165">Period of Wakea (Fornander)</text>
-      <text class="yearLabel" x="30" y="2190">400 AD</text>
-      <text class="yearLabel" x="30" y="2290">450 AD</text>
-      <text class="yearLabel yearTitle" x="30" y="2315">Tu-tarangi is living in Fiji;</text>
-      <text class="yearLabel yearTitle" x="30" y="2345">first mention of Samoa</text>
-      <text class="yearLabel" x="30" y="2390">500 AD</text>
-      <text class="yearLabel yearTitle" x="30" y="2415">Period of Tinirau</text>
-      <text class="yearLabel" x="30" y="2520">575 AD</text>
       <text class="yearLabel yearTitle" x="30" y="2545">Period of Renga-ariki</text>
-      <text class="yearLabel" x="30" y="2590">600 AD</text>
       <text class="yearLabel yearTitle" x="30" y="2615">Tu-tonga-kai-a-Iti lives in Tonga-nui;</text>
       <text class="yearLabel yearTitle" x="30" y="2645">others in Samoa</text>
-      <text class="yearLabel" x="30" y="2690">650 AD</text>
       <text class="yearLabel yearTitle" x="30" y="2715">Period of Ui-te-rangiora, the navigator;</text>
       <text class="yearLabel yearTitle" x="30" y="2745">Antarctic voyages</text>
       <text class="yearLabel yearTitle" x="400" y="2665">Hawaii first settled</text>
       <text class="yearLabel yearTitle" x="350" y="2765">Marquesas probably settled</text>
-      <text class="yearLabel" x="30" y="2790">700 AD</text>
       <text class="yearLabel yearTitle" x="30" y="2815">Period of Tawhaki</text>
-      <text class="yearLabel" x="30" y="2990">800 AD</text>
-      <text class="yearLabel" x="30" y="3090">850 AD</text>
       <text class="yearLabel yearTitle" x="30" y="3115">Maku visits New Zealand</text>
       <text class="yearLabel yearTitle" x="300" y="3065">Tahiti was inhabited at this time</text>
       <text class="yearLabel yearTitle" x="280" y="3095">but not then settled for the first time</text>
-      <text class="yearLabel" x="30" y="3140">875 AD</text>
       <text class="yearLabel yearTitle" x="30" y="3165">Period of Apakura</text>
       <text class="yearLabel yearTitle" x="130" y="3140">Rarotonga first colonised by Apopo and Ata-i-te-kura</text>
-      <text class="yearLabel yearTitle" x="130" y="3200">Period of Tuna-ariki and Tu-ei-puku in Fiji</text>
+      <text class="yearLabel yearTitle" x="130" y="3200">Period of Tuna-ariki and Tu-ei-puku in Fiji</text> -->
 
-      <text class="yearLabel" x="30" y="3190">900 AD</text>
-      <text class="yearLabel" x="30" y="3390">1000 AD</text>
-      <text class="yearLabel" x="30" y="3590">1100 AD</text>
-      <text class="yearLabel" x="30" y="3790">1200 AD</text>
-      <text class="yearLabel" x="30" y="3990">1300 AD</text>
-      <text class="yearLabel" x="30" y="4190">1400 AD</text>
-      <text class="yearLabel" x="30" y="4290">1500 AD</text>
 
       <!-- Timeline stories -->
       <!-- Lines -->
-      <path class="storyLine01 storyLine" d="M 10 2700  590 2700"></path>
-      <path class=" storyLine" d="M 10 3000  590 3000"></path>
+      <!-- <path class="storyLine01 storyLine" d="M 10 2700  590 2700"></path>
+      <path class=" storyLine" d="M 10 3000  590 3000"></path> -->
       <!--MAUI 800AD-->
       <!-- <path class="storyLine03 storyLine" d="M 10 2050  590 2050"></path> -->
       <!-- <path class="storyLine04 storyLine" d="M 10 2450  590 2450"></path> -->
       <!-- <path class="storyLine05 storyLine" d="M 10 2500  590 2500"></path> -->
 
       <!-- html title & video -->
-      <foreignObject id="story800AD" x="50" y="2990" width="500" height="500">
+      <!-- <foreignObject id="story800AD" x="50" y="2990" width="500" height="500">
         <div class="story800ADHidden">
+          <img src="./assets/maui-cover.png" width="500" style="margin-top: 50px;">
+          <p class="story-title" style="margin-top:-200px;margin-left:200px">Maui</p>
+          <img id="maui-playbutton" class="play-button circle pulse" src="./assets/play.png" width="50"
+            style="margin-top: 30px;margin-left: 50%;transform: translate(-50%, -50%); cursor: pointer" </div>
+      </foreignObject> -->
+
+
+      <!-- STORY TRIGGERS -->
+      <path alt="450BC" class="storyLine01 storyLine" d="M 10 930  590 460"></path>
+      <path alt="233BC" class="storyLine02 storyLine" d="M 10 930  590 930"></path>
+
+
+      <!-- MAIN EVENTS (WITH VIDEO CONTENT) -->
+      <!-- MAUI 223 BC -->
+      <!-- <circle class="ball ball00" r="10" cx="255" cy="930" fill="#646FD4"></circle> <!-- circle -->
+      <!-- <text class="storyText storyText00" x="200" y="920">223 BC !!!</text> -->
+
+
+      <!-- Event 1 -->
+      <!-- 450BC  -->
+      <circle class="ball ball01" r="10" cx="450" cy="460" fill="#646FD4"></circle> <!-- circle -->
+      <text class="storyText storyText01" x="200" y="450">Te Nga-taito-ariki and Tu Te Rangi Marama</text>
+      <text class="storyText storyText01" x="200" y="470"> rule over Atia Te Varinga Nui believed to be in India
+        (450BC)</text>
+
+      <!-- Event 2 -->
+      <circle class="ball ball02" r="10" cx="255" cy="930" fill="#646FD4"></circle> <!-- circle -->
+      <text class="storyText storyText02" x="200" y="920">Ptolemy III Euergetes sends a Captain named</text>
+      <text class="storyText storyText02" x="200" y="940"> Rata and a Navigator named Maui to circumnavigate the
+        world.</text>
+      <text class="storyText storyText02" x="200" y="960"> The Ptolomy Maps are produced detailing Indonesia,</text>
+      <text class="storyText storyText02" x="200" y="980"> the Pacific Ocean and the antarctic. (232 BC)</text>
+      <!-- html title & video -->
+      <foreignObject id="story233BC" x="50" y="930" width="500" height="500">
+        <div class="story233BCHidden">
           <img src="./assets/maui-cover.png" width="500" style="margin-top: 50px;">
           <p class="story-title" style="margin-top:-200px;margin-left:200px">Maui</p>
           <img id="maui-playbutton" class="play-button circle pulse" src="./assets/play.png" width="50"
@@ -159,26 +255,49 @@
       </foreignObject>
 
 
-      <!-- Waka path  -->
+
+      <!-- Event 3 -->
+      <circle class="ball ball03" r="10" cx="160" cy="1250" fill="#646FD4"></circle> <!-- circle -->
+      <text class="storyText storyText03" x="200" y="1240"> Te Kura-a-Moo migrates to Avaiki-te-Varinga (Indonesia) (65
+        BC)</text>
+
+      <!-- Event 4 -->
+      <circle class="ball ball04" r="10" cx="300" cy="1790" fill="#646FD4"></circle> <!-- circle -->
+      <text class="storyText storyText04" x="250" y="1780"> The year of the five emperors (193)</text>
+
+      <!-- Event 5 -->
+      <circle class="ball ball05" r="10" cx="250" cy="1890" fill="#646FD4"></circle> <!-- circle -->
+      <text class="storyText storyText05" x="250" y="1880">Hadrian's Wall is built across Northern England
+        (122-132)</text>
+
+      <!-- Event 6 -->
+      <circle class="ball ball06" r="10" cx="250" cy="2000" fill="#646FD4"></circle> <!-- circle -->
+      <text class="storyText storyText06" x="250" y="2000">Chinese chronicles described the existence</text>
+      <text class="storyText storyText06" x="250" y="2020">of diplomatic relations between Java and China (132)</text>
+
+      <!-- Event 7 -->
+      <circle class="ball ball07" r="10" cx="250" cy="2100" fill="#646FD4"></circle> <!-- circle -->
+      <text class="storyText storyText07" x="250" y="2100">The Antonine Wall is built across </text>
+      <text class="storyText storyText07" x="250" y="2120">what is now central Scotland (142-154)</text>
+
+      <!-- Event 8 -->
+      <circle class="ball ball08" r="10" cx="480" cy="2220" fill="#646FD4"></circle> <!-- circle -->
+      <text class="storyText storyText08" x="250" y="2210">Rome ransacked by the Visigoths led by King Alaric
+        (410)</text>
+
+
+
+      <!-- ============== 
+              Waka  
+          ============== -->
+
+      <!-- Waka path -->
       <path class="theLine" id="linePath"
-        d="M300.359 0V245.845C298.686 282.372 303.704 333.748 416.125 401.403C467.316 432.211 468.655 554.45 416.125 604C331.704 683.632 -71.0308 601.51 10.9426 781.843C68.3348 908.101 291.049 834.896 278 1030C264.951 1225.1 122.694 1188.73 166.859 1355.72C211.024 1522.71 634.504 1489.15 589 1618.5C543.496 1747.85 233.917 1720.93 256 1906.5C278.083 2092.07 692.583 2145.52 435.5 2242C217 2324 41 2406.35 41 2504.5C41 2602.65 336.5 2560.5 419.5 2765.5C508.065 2984.24 87.4962 2976.83 88.5 3064.5C89.8282 3180.5 439.5 3143.7 447.5 3274.5C457.5 3438 29 3513.5 236.5 3721C352.113 3836.61 540.5 3963 374.5 4042C240.076 4105.97 78 4065.5 81.5 4179C85 4292.5 374.5 4305.21 374.5 4458.5C374.5 4593.5 46 4612 202 4695C294 4743.95 441.338 4758.08 374.5 4791.5C320.5 4818.5 308.5 4873.76 308.5 4923C308.5 4967 308.5 4967 308.5 4996.5"
+        d="M300.358 0V245.845C298.685 282.372 303.704 333.748 416.125 401.403C467.316 432.211 468.655 554.45 416.125 604C331.704 683.632 -71.0309 601.51 10.9424 781.843C68.3346 908.101 291.049 834.896 278 1030C264.951 1225.1 122.694 1188.73 166.859 1355.72C211.024 1522.71 634.503 1489.15 589 1618.5C543.496 1747.85 233.917 1720.93 256 1906.5C278.082 2092.07 692.583 2145.52 435.5 2242C217 2324 40.9999 2406.35 40.9999 2504.5C40.9999 2602.65 336.5 2560.5 419.5 2765.5C508.064 2984.24 87.4961 2976.83 88.4999 3064.5C89.8281 3180.5 439.5 3143.7 447.5 3274.5C457.5 3438 28.9999 3513.5 236.5 3721C352.112 3836.61 540.5 3963 374.5 4042C240.075 4105.97 77.9999 4065.5 81.4999 4179C84.9999 4292.5 366.5 4247.21 366.5 4400.5"
         stroke="#646FD4" stroke-width="1" fill="none" />
 
-
-
-
-
       <!-- Waka -->
-      <!-- <path
-          class="waka"
-          d="M13.9998 0.5C3.99993 27.5 -11.6002 74.8 13.9998 132C39.4999 75.5 23.5 26 13.9998 0.5Z"
-          fill="#0AA1DD"
-        /> -->
-
-      <!-- testing new waka svg -->
       <g class="waka">
-
-
         <path
           d="M1 108C39 58.4 61.1667 16.3333 67.5 1.5C73.9283 18.6833 78.6755 34.2467 81.8098 48.5C82.8679 53.312 83.7422 57.9747 84.4352 62.5C89.9923 98.785 83.8976 126.236 67.5 151C42 113.5 49.5 75 49.5 64C35.5 80.5 11.5 101 1 108Z"
           fill="#646FD4" />
@@ -200,78 +319,7 @@
           stroke="#646FD4" stroke-width="2" />
         <path d="M18.5 93.5L57 128.5" stroke="#646FD4" />
         <path d="M73.5 23L125 85.5" stroke="#646FD4" />
-
-
       </g>
-
-      <!-- STORY 1 -->
-      <!-- circle -->
-      <circle class="ball ball02" r="10" cx="405" cy="2700" fill="#646FD4"></circle>
-      <!-- text -->
-      <text class="storyText storyText01" x="350" y="2690">650 AD</text>
-      <!-- html title & video -->
-      <!-- <foreignObject id="story650AD" x="50" y="1490" width="500" height="500">
-          <div class="story650ADHidden">
-            <p class="story-title">Ui Te Rangiora</p>
-            <iframe
-              src="https://www.youtube.com/embed/bOQPwB0HiBo"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </foreignObject> -->
-
-      <!-- STORY 2 -->
-      <circle class="ball ball03" r="10" cx="147" cy="3000" fill="#646FD4"></circle>
-      <text class="storyText02 storyText" x="170" y="2990">800 AD</text>
-
-
-      <!-- STORY 3 -->
-      <!-- circle -->
-      <circle class="ball ball04" r="10" cx="190" cy="3250" fill="#646FD4"></circle>
-      <!-- 925 AD -->
-      <text class="storyText03 storyText" x="150" y="3240">925 AD</text>
-
-      <!-- STORY 4 -->
-      <!-- circle -->
-      <!-- <circle
-          class="ball ball05"
-          r="10"
-          cx="360"
-          cy="2450"
-          fill="#646FD4"
-        ></circle> -->
-      <!-- 1125 AD -->
-      <!-- <text class="storyText04 storyText" x="350" y="2440">1125 AD</text> -->
-
-      <!-- STORY 5 -->
-      <!-- circle -->
-      <!-- <circle
-          class="ball ball06"
-          r="10"
-          cx="395"
-          cy="2500"
-          fill="#646FD4"
-        ></circle> -->
-      <!-- 1150 AD -->
-      <!-- <text class="storyText05 storyText" x="380" y="2490">1150 AD</text> -->
-
-      <!-- <path class="theLine" d="M -5,0
-                 Q 450 230 300 450 
-                 T 130 750
-                 Q 100 850 300 1000
-                 T 150 1200" fill="none" stroke="white" stroke-width="2px" /> -->
-
-      <!-- <path class="theLine" d="M -5 0 Q 450 230 300 450 T 130 750 Q 100 850 306 1326 T 158 2072" fill="none" stroke="white" stroke-width="2px" /> -->
-
-      <!-- </svg> -->
-
-      <!-- path follower -->
-      <!-- <circle class="ball ball01" r="20" cx="50" cy="100"></circle> -->
-
-      <!-- Timeline points -->
     </svg>
 
 
@@ -281,9 +329,99 @@
       <iframe frameborder="0" allowfullscreen="" scrolling="no" allow="autoplay;fullscreen" width="900" height="750"
         src="https://onelineplayer.com/player.html?autoplay=false&autopause=false&muted=false&loop=false&url=https%3A%2F%2Fwww.dropbox.com%2Fs%2Fq2zwjf1r46rbdsx%2FMaungarongo%2520Ki%2520Te%2520Whenua%2520-%2520M%25C4%2581ui%2520%2528No%2520Titles%2529.mp4%3Fraw%3D1&poster=&time=true&progressBar=true&overlay=true&muteButton=true&fullscreenButton=true&style=light&quality=auto&playButton=true"></iframe>
 
-      <img id="lightbox-closebutton" class="close-button" src="./assets/close.png" width="50">
+      <img class="close-button" src="./assets/close.png" width="50">
     </div>
     <!-- End of content -->
+
+
+    <!-- Info Lightbox -->
+    <div id="info-lightbox" class="lightbox">
+
+      <div>
+        <h1 class="info-title">Using genealogy to place people and events on a timeline</h1>
+        <p>This timeline draws on the Matauranga (knowledge) and korero tuku (oral traditions) of Polynesian teachers
+          and experts such as Te Ariki Tara’are, Matatia, Mamoe, Te Matorohanga and Hoani Te Whatahoro Jury. Assisted by
+          the careful note taking, record keeping and cross referencing carried out by missionaries, surveyors,
+          ethnographers and anthropologists such as Reverend John Bettridge Stair, John Francis Grey Stokes, Abraham
+          Fornander and Stephenson Percy Smith.</p>
+
+        <p>Reverend John Bettridge Stair served in his role at a pivotal time when Polynesian traditions, languages and
+          histories in their purest forms, were at risk of being diluted and lost as foregn values, teachings and
+          cultures set in. “... from the very first, I felt great interest in Samoa and the Samoans, and endeavoured on
+          every occasion to collect data and memoranda bearing upon their past history and customs, as well as
+          conditions of life, knowing full well that such facts might soon be difficult to obtain”</p>
+
+        <p>For 7 years between 1838 and 1845 Reverend John Bettridge Stair served as a missionary in Samoa. He dedicated
+          his time between missionary duties and documenting the histories, genealogies and traditions of the Samoan and
+          Rarotongan people. Stair took advantage of the access that being a missionary gave him. He used his position
+          to record some of the deeper details relating to the traditions, genealogies and knowledge of the people. In
+          his own words “A resident missionary occupies strong vantage-ground over transitory visitors in collecting
+          facts and data concerning a people among whom he dwells, and I always felt it my duty to avail myself of any
+          opportunity to collect such knowledge as far as I could consistently with my regular missionary duties” </p>
+
+        <p>Stephenson Percy Smith was an english ethnologist who interviewed some of the last remaining tohunga
+          (experts) in whakapapa, history and cosmology in New Zealand and in the Pacific Islands at a time when it was
+          widely expected that the Maori race was dying. By applying himself to understanding Maori and
+          Polynesian cultures and languages, Smith gained insight to korero tuku iho and the deeper elements of the
+          Maori and Polynesian worlds. Smith used his unparalleled access to document historical details and
+          genealogical lines. Smith used a measure of 25 years per generation to measure timeframes.</p>
+
+        <p>John Francis Grey Stokes, born in Newcastle, New South Wales in 1875, was a renowned archaeologist and
+          historian. In 1903 he was appointed Curator of Polynesian Ethnology at the Bernice Pauahi Bishop Museum in
+          Hawaii where he became the first historian to use modern surveying techniques incorporating photography in the
+          documentation of places of significance within Hawaii with an emphasis on archaeological sites such as heiau
+          (monumental temple sites). The materials he helped produce under the guidance of Kanaka Maoli (indigenous
+          Hawaiian experts) now serve as an important educational resource. </p>
+        <p> “Smith's adoption of twenty-five years for a Polynesian generation is preferable to Fornander's thirty
+          years. However, the best comparison available to me is the Japanese royal line between A.D. 400 and A.D. 1900,
+          following the details in Brinkley's History of the Japanese People. After eliminating the lateral successions
+          and counting down the direct line, I arrive at 57 generations averaging 26 1/3 years… In view of this, Smith's
+          estimate seems very fair” - John Francis Grey Stokes</p>
+
+        <p>“The valuable information which I thus obtained was subsequently supplemented, on my return to England in
+          1846, by a native Samoan chief, Mamoe, and his wife, Mamoe fafine, who were domiciled in my family. They were
+          both of high rank, and well informed, as well as fully conversant with Samoan native customs and traditional
+          lore”</p>
+
+        <p>Abraham Fornander was a Swedish ethnologist who was made a Judge and the Inspector General of Schools within
+          the Kingdom of Hawaii by King Kamekameha V. Fornander was known and despised for placing an emphasis on
+          justice for the Native Hawaiian people and for his commitment to Hawaiian language and historical records.
+          Fornander compared Polynesian languages, mythology and genealogies at a value of 30 years per generation to
+          place people and events on a timeline.</p>
+
+        <p> “Polynesian scholars will notice in this genealogy that Mr. Stair's native historian has given many of the
+          names in their Samoan form, others in their Rarotongan form. A native of Rarotonga after dwelling some time in
+          Samoa would be likely to do this. The attention of Maori scholars is drawn to Nos. 65, 67, 68 (on the
+          timeline): Tai (Toi), Ra-ulu (Rauru), and Atonga (Whatonga). Three very celebrated ancestors of the people
+          found in New Zealand on the arrival of the fleet of canoes twenty or twenty-one generations ago were Toi,
+          Rauru, and Whatonga, which occur exactly in the above order, i.e., Whatonga was a grandson of Toi. According
+          to Rarotonga history, Tangiia, No. 73 on the list, flourished about twenty-four generations ago, therefore
+          Atonga (No. 68) lived about twenty-nine generations ago. According to Maori genealogies, Whatonga lived about
+          twenty-seven or twenty-eight generations ago. It would seem from this that the three names given are
+          identical, and known both to Rarotongans and Maoris, and that they are ancestors common to both peoples. The
+          transmutation of Tai into Toi is in strict accordance with the genesis of the Polynesian languages, where “a,”
+          “o,” and “e” are constantly interchangeable. The argument against the identity of these three people is the
+          fact that, so far as is known, Toi, Rauru, and Whatonga always resided in New Zealand—they are acknowledged on
+          all hands to be the ancestors of the people found here by the Hawaiki Maoris. This difficulty in Polynesian
+          history is capable of explanation, but this is not the place for it. Our object is to draw the attention of
+          scholars to what seems to be something more than a mere coincidence, and to point to the results which are
+          likely to flow from the publication of such valuable papers as those of the Rev. J. B. Stair's.— Editors”</p>
+
+        <p>“According to Rarotonga history, Tangiia, (No. 73) on the list, flourished about twenty-four generations ago”
+          NB: At 25 years per generation, twenty-four generations = 600 years before the date of publication of this
+          research (1895) means the time of Tangiia-Ariki-Nui (Tangiia) who was the last custodian of the Takitumu
+          (Talitimu) waka before leading a voyage to New Zealand was around 1295 </p>
+
+        <p> “therefore Atonga (No. 68) lived about twenty-nine generations ago. According to Maori genealogies, Whatonga
+          lived about twenty-seven or twenty-eight generations ago”</p>
+
+        <p>NB: At 25 years per generation, twenty-nine generations = 725 years before the date of publication of this
+          research (1895) places the time of Whatonga around 1170</p>
+
+      </div>
+
+      <img class="close-button" src="./assets/close.png" width="50">
+    </div>
 
     <script src="./src/index.js"></script>
 </body>

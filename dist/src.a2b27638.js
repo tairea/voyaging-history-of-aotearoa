@@ -9990,9 +9990,8 @@ var pulses = _gsapTrial.default.timeline({
     transformOrigin: "center",
     ease: "elastic(2.5,1)"
   }
-}).to(".storyText01, .ball02", {}, 52.73).to(".storyText02, .ball03", {}, 60.65).to(".storyText03, .ball04", {}, 67.46); // .to(".storyText04, .ball05", {}, 79)
-// .to(".storyText05, .ball06", {}, 80);
-
+}) // These are the GSAP Timeline timings of when to pulse the text & circles
+.to(".storyText01, .ball01", {}, 7.05).to(".storyText02, .ball02", {}, 20.44).to(".storyText03, .ball03", {}, 25.4).to(".storyText04, .ball04", {}, 39).to(".storyText05, .ball05", {}, 40.7).to(".storyText06, .ball06", {}, 42).to(".storyText07, .ball07", {}, 44).to(".storyText08, .ball08", {}, 47.26);
 
 var main = _gsapTrial.default.timeline({
   scrollTrigger: {
@@ -10033,7 +10032,21 @@ var main = _gsapTrial.default.timeline({
 //   0
 // )
 // .add(pulses, 0)
-// 800AD Story
+// 233BC Story
+.to(".storyLine00", {
+  scrollTrigger: {
+    trigger: ".storyLine00",
+    start: "center 10%",
+    // end: "+=350",
+    // pin: "#svg",
+    markers: true,
+    toggleClass: {
+      targets: ".story233BCHidden",
+      className: "story233BCShow"
+    }
+  },
+  duration: 100
+}, 0).add(pulses, 0) // 800AD Story
 .to(".storyLine02", {
   scrollTrigger: {
     trigger: ".storyLine02",
@@ -10051,27 +10064,39 @@ var main = _gsapTrial.default.timeline({
 
 _GSDevTools.GSDevTools.create({
   animation: main
-});
+}); // Lightboxes
+
 
 document.getElementById("maui-playbutton").addEventListener("click", triggerMauiLightbox, false);
-document.getElementById("lightbox-closebutton").addEventListener("click", triggerMauiLightbox, false);
-var activeFlag = false;
+document.getElementById("disclaimer-infobutton").addEventListener("click", triggerInfoLightbox, false);
 
 function triggerMauiLightbox() {
-  activeFlag = !activeFlag;
+  // add noscroll class to body
+  document.getElementsByTagName("body")[0].classList.add("noscroll"); // display: flex to lightbox maui
 
-  if (activeFlag) {
-    // add noscroll class to body
-    document.getElementsByTagName("body")[0].classList.add("noscroll"); // display: flex to lightbox maui
-
-    document.getElementById("maui-lightbox").classList.add("active");
-  } else {
-    // add noscroll class to body
-    document.getElementsByTagName("body")[0].classList.remove("noscroll"); // display: flex to lightbox maui
-
-    document.getElementById("maui-lightbox").classList.remove("active");
-  }
+  document.getElementById("maui-lightbox").classList.add("active");
 }
+
+function triggerInfoLightbox() {
+  // add noscroll class to body
+  document.getElementsByTagName("body")[0].classList.add("noscroll"); // display: flex to lightbox info
+
+  document.getElementById("info-lightbox").classList.add("active");
+} // close x's
+
+
+var closeXs = document.querySelectorAll('.close-button');
+console.log("closeXs", closeXs);
+closeXs.forEach(function (X) {
+  X.addEventListener('click', function handleClick(event) {
+    // remove noscroll class from body
+    document.getElementsByTagName("body")[0].classList.remove("noscroll"); // remove active class from all lightboxes
+
+    document.querySelectorAll(".lightbox").forEach(function (obj) {
+      return obj.classList.remove("active");
+    });
+  });
+});
 },{"gsap-trial":"node_modules/gsap-trial/index.js","gsap-trial/ScrollTrigger":"node_modules/gsap-trial/ScrollTrigger.js","gsap-trial/DrawSVGPlugin":"node_modules/gsap-trial/DrawSVGPlugin.js","gsap-trial/MotionPathPlugin":"node_modules/gsap-trial/MotionPathPlugin.js","gsap-trial/GSDevTools":"node_modules/gsap-trial/GSDevTools.js","gsap-trial/ScrollSmoother":"node_modules/gsap-trial/ScrollSmoother.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -10100,7 +10125,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63353" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51356" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
