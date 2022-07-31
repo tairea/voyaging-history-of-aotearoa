@@ -1,19 +1,13 @@
-import gsap from "gsap-trial";
+import gsap from "gsap";
 
-import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
-import { DrawSVGPlugin } from "gsap-trial/DrawSVGPlugin";
-import { MotionPathPlugin } from "gsap-trial/MotionPathPlugin";
-import { GSDevTools } from "gsap-trial/GSDevTools";
-// import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
-
-console.log("yolo")
+import ScrollTrigger from "gsap/ScrollTrigger";
+import DrawSVGPlugin from "gsap/DrawSVGPlugin";
+import MotionPathPlugin from "gsap/MotionPathPlugin";
 
 gsap.registerPlugin(
   ScrollTrigger,
   DrawSVGPlugin,
-  MotionPathPlugin,
-  GSDevTools,
-  // ScrollSmoother
+  MotionPathPlugin
 );
 
 gsap.to(".main-title", {

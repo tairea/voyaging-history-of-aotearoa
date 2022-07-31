@@ -8,6 +8,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
+    "gsap": "npm:@gsap/shockingly@^3.10.4",
     "gsap-trial": "3.10.4",
     "parcel-bundler": "1.12.5"
   },
