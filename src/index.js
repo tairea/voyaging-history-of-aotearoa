@@ -4,14 +4,16 @@ import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
 import { DrawSVGPlugin } from "gsap-trial/DrawSVGPlugin";
 import { MotionPathPlugin } from "gsap-trial/MotionPathPlugin";
 import { GSDevTools } from "gsap-trial/GSDevTools";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
+// import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
+
+console.log("yolo")
 
 gsap.registerPlugin(
   ScrollTrigger,
   DrawSVGPlugin,
   MotionPathPlugin,
   GSDevTools,
-  ScrollSmoother
+  // ScrollSmoother
 );
 
 gsap.to(".main-title", {
@@ -51,11 +53,12 @@ const pulses = gsap
   .to(".storyText01, .ball01", {}, 7.05)
   .to(".storyText02, .ball02", {}, 20.44)
   .to(".storyText03, .ball03", {}, 25.4)
-  .to(".storyText04, .ball04", {}, 39)
-  .to(".storyText05, .ball05", {}, 40.7)
-  .to(".storyText06, .ball06", {}, 42)
-  .to(".storyText07, .ball07", {}, 44)
-  .to(".storyText08, .ball08", {}, 47.26)
+  .to(".storyText04, .ball04", {}, 49.4)
+  .to(".storyText05, .ball05", {}, 60.26)
+  .to(".storyText06, .ball06", {}, 65.65)
+  .to(".storyText07, .ball07", {}, 75)
+  .to(".storyText08, .ball08", {}, 81.72)
+  .to(".storyText09, .ball09", {}, 82.41)
 
 
 
@@ -65,7 +68,7 @@ const main = gsap
       trigger: "#svg",
       scrub: true,
       start: "top top",
-      end: "bottom bottom",
+      end: "bottom 70%",
       // markers: true
     }
   })
@@ -83,44 +86,21 @@ const main = gsap
     },
     0
   )
-  // 650AD Story
-  // .to(
-  //   ".storyLine01",
-  //   {
-  //     scrollTrigger: {
-  //       trigger: ".storyLine01",
-  //       start: "center 20%",
-  //       end: "+=300",
-  //       pin: "#svg"
-  //       // markers: true,
-  //       // toggleClass: {
-  //       //   targets: ".story650ADHidden",
-  //       //   className: "story650ADShow"
-  //       // }
-  //     },
-  //     duration: 100
-  //   },
-  //   0
-  // )
-  // .add(pulses, 0)
-
-
-
-
-
-  // 233BC Story
+  /* ==============
+      Ui TeRangi Ora
+     ============== */
   .to(
-    ".storyLine00",
+    ".UiTeRangi",
     {
       scrollTrigger: {
-        trigger: ".storyLine00",
-        start: "center 10%",
-        // end: "+=350",
+        trigger: ".UiTeRangi",
+        start: "center 40%",
+        // end: "+=450",
         // pin: "#svg",
-        markers: true,
+        // markers: true,
         toggleClass: {
-          targets: ".story233BCHidden",
-          className: "story233BCShow"
+          targets: ".storyUiTeRangiHidden",
+          className: "storyUiTeRangiShow"
         }
       },
       duration: 100
@@ -128,19 +108,21 @@ const main = gsap
     0
   )
   .add(pulses, 0)
-  // 800AD Story
+  /* ==============
+       Maui
+   ============== */
   .to(
-    ".storyLine02",
+    ".Maui",
     {
       scrollTrigger: {
-        trigger: ".storyLine02",
-        start: "center 20%",
-        end: "+=350",
-        pin: "#svg",
+        trigger: ".Maui",
+        start: "center 40%",
+        // end: "+=350",
+        // pin: "#svg",
         // markers: true,
         toggleClass: {
-          targets: ".story800ADHidden",
-          className: "story800ADShow"
+          targets: ".storyMauiHidden",
+          className: "storyMauiShow"
         }
       },
       duration: 100
@@ -149,26 +131,44 @@ const main = gsap
   )
   .add(pulses, 0);
 
-GSDevTools.create({ animation: main });
+// GSDevTools.create({ animation: main });
 
 
 
 // Lightboxes
+document.getElementById("uiterangi-playbutton").addEventListener("click", triggerUiTerangiLightbox, false)
 document.getElementById("maui-playbutton").addEventListener("click", triggerMauiLightbox, false)
 document.getElementById("disclaimer-infobutton").addEventListener("click", triggerInfoLightbox, false)
+console.log(document.getElementById("disclaimer-infobutton"))
 
+
+
+
+// info button
+function triggerInfoLightbox() {
+  console.log("info clicked")
+  // add noscroll class to body
+  document.getElementsByTagName("body")[0].classList.add("noscroll");
+  // display: flex to lightbox info
+  document.getElementById("info-lightbox").classList.add("active");
+}
+
+// maui lightbox
+function triggerUiTerangiLightbox() {
+  // add noscroll class to body
+  document.getElementsByTagName("body")[0].classList.add("noscroll");
+  // display: flex to lightbox maui
+  document.getElementById("uiterangi-lightbox").classList.add("active");
+}
+
+// te uirangi ora lightbox
 function triggerMauiLightbox() {
   // add noscroll class to body
   document.getElementsByTagName("body")[0].classList.add("noscroll");
   // display: flex to lightbox maui
   document.getElementById("maui-lightbox").classList.add("active");
 }
-function triggerInfoLightbox() {
-  // add noscroll class to body
-  document.getElementsByTagName("body")[0].classList.add("noscroll");
-  // display: flex to lightbox info
-  document.getElementById("info-lightbox").classList.add("active");
-}
+
 
 // close x's
 const closeXs = document.querySelectorAll('.close-button');
@@ -179,5 +179,12 @@ closeXs.forEach(X => {
     document.getElementsByTagName("body")[0].classList.remove("noscroll");
     // remove active class from all lightboxes
     document.querySelectorAll(".lightbox").forEach(obj => obj.classList.remove("active"));
+    // stop videos
+    const videos = document.querySelectorAll('iframe')
+    videos.forEach(i => {
+      const source = i.src
+      i.src = ''
+      i.src = source
+    })
   });
 });
