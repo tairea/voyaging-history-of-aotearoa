@@ -11,6 +11,14 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: white
+}
+
+a:visited {
+  color: white
+}
+
 .purple-overlay {
   background-color: purple;
   opacity: 0.2;
@@ -107,7 +115,7 @@ text {
 
 .yearTitle {
   font-size: 0.6rem;
-  fill: rgba(200, 200, 200, 0.5);
+  fill: rgba(255, 255, 255, 0.6);
   /* fill: rgba(0, 0, 0, 0.5); */
   font-style: italic;
   font-family: "Cormorant Garamond", serif;
@@ -127,7 +135,7 @@ text {
 
 .storyText {
   fill: rgba(255, 255, 255, 0.9);
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-style: italic;
   font-family: "Cormorant Garamond", serif;
   visibility: hidden;
