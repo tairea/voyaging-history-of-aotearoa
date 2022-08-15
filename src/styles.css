@@ -152,7 +152,9 @@ text {
       STORY SHOW/HIDES
    ===================== */
 .storyUiTeRangiHidden,
-.storyMauiHidden {
+.storyMuturangawhenuaHidden,
+.storyArutanganukuHidden,
+.storyTangiiaHidden {
   /* border: 1px solid red  */
   opacity: 0;
   transition: all 0.3s;
@@ -160,7 +162,9 @@ text {
 }
 
 .storyUiTeRangiShow,
-.storyMauiShow {
+.storyMuturangawhenuaShow,
+.storyArutanganukuShow,
+.storyTangiiaShow {
   opacity: 1;
   transition: all 0.3s;
 }
@@ -247,12 +251,13 @@ p {
   padding: 50px 50px 50px 50px;
   overflow-y: scroll;
   height: 120vh;
+  align-items: flex-start;
 }
 
 #info-lightbox p {
   padding-right: 100px;
   margin-bottom: 20px;
-  font-style: italic;
+  /* font-style: italic; */
   font-family: "Cormorant Garamond", serif;
 }
 
